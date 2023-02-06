@@ -26,7 +26,7 @@ body {
 main {
 	position: relative;
 	width: 100rem;
-	height: 60rem;
+	height: 80rem;
 	background-color: rgba(255, 255, 255, 0.35);
 	backdrop-filter: blur(200px);
 	filter: blur();
@@ -38,11 +38,34 @@ main {
 
 .player {
 	flex: 50%;
-	padding: 9rem;
+	padding: 4rem;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: space-between;
 	transition: all 0.75s;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title {
+	font-size: 2.8rem;
+}
+
+.btn-container {
+	display: flex;
+	gap: 2rem;
+}
+
+.maze-container {
+	border-radius: 9px;
+	background-color: rgba(255, 255, 255, 0.4);
+	height: 90%;
+	padding: 10px;
+	text-align: center;
 }
 
 /* ELEMENTS */
@@ -114,4 +137,13 @@ main {
 
 .hidden {
 	display: none;
+}
+
+.box {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	margin: 3px;
+	border-radius: 5px;
+	display: inline-block;
 }
